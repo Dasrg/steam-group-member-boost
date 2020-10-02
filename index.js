@@ -57,7 +57,7 @@ var allFailed = 0;
 													
 								console.log('[%s] Successfully logged on (Session ID: %s)'.yellow, logOnOptions.accountName, sessionID);
 								var options = {
-									formData: {	action: join, sessionID: sessionID },
+									formData: {	action: 'join', sessionID: sessionID },
 									headers: { Cookie: cookies, Host: 'steamcommunity.com', Origin: 'https://steamcommunity.com' },
 									json: true
 								};
